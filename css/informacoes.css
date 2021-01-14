@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flexbox;
+}
+.jumbotron{
+    text-align: center;
+    background-color: #FCF97A;
+}
+.jumbotron::after{
+    content: "";
+    height: 4px;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    background: #7BA6EF;
+    font-weight: bold;
+}
+.instrucoes{
+    padding: 1%;
+    border: solid black 2px;
+}

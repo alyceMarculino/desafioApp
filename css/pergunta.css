@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flexbox;
+}
+#myBar {
+  height: 10%;
+  background-image: linear-gradient(to right,  #7BA6EF , red );
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
+#pgt {
+  margin: auto;
+  margin-top: 2%;
+  padding: 2%;
+  border: 1px solid #7BA6EF;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+}
+h3{
+  padding-bottom: 2%;
+}
+h3::after{
+  content: "";
+  height: 4px;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  background: #7BA6EF;
+  font-weight: bold;
+}
+.row > .card{
+  width: 45%;
+  margin: auto;
+  border:   solid #FCF97A 2px;
+}
+.card-body > input {
+  height: calc(1.5em + .5rem + 2px);
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  width: 100%;
+}
+.accordion{
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Novo Teste</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> Home </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="novoTeste.html">Novo Teste <span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="testeAntigo.html">Ver Testes</a>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <form action="iniciarTeste.php" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Nome</label>
+                    <input type="text" class="form-control" minlength="3" placeholder="Nome Completo" id="validation1" required>
+                </div>
+                <div class="col">
+                    <label for="selfie">Envie aqui sua foto</label>
+                    <input type="file" class="form-control-file" name="imagem" id="validation2" onchange="previewImagem()" required>
+                    <small id="selfie" class="form-text text-muted">Nunca vamos compartilhar sua foto, com ninguém.</small>
+                    <img style="width: 20%; margin-top: 1%; position: relative;">
+                   
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" name="novoTeste">Começar Teste</button>
+        </form>
+    </div>
+
+    <script src="js/funcaoValidacao.js"></script>
+    <script src="js/funcaoPreview.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>

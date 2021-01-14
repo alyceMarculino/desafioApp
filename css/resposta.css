@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flexbox;
+}
+.table{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.btn{
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 45%;
+    margin-bottom: 2%;
+}
+.card{
+    width: 80%;
+    text-align: center;
+    margin:auto;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/pergunta.css">
+    <script src="js/barraDeProgresso.js"> </script>
+    <title>Perguntas</title>
+</head>
+
+<body>
+    <div id="myProgress">
+        <div id="myBar">1/20</div>
+    </div>
+
+    <div id="pgt">
+        <h3 id="pergunta"> </h3>
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text" id="suposicao1"> </p>
+                    <select class="form-control form-control-sm" onchange="completarNumero(this.value, 1)" id="valor1"
+                        required>
+                        <option value=""> Selecione uma opção </option>
+                        <option value=0> 0 </option>
+                        <option value=1> 1 </option>
+                        <option value=2> 2 </option>
+                        <option value=3> 3 </option>
+                    </select>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text" id="suposicao2"> </p>
+                    <select class="form-control form-control-sm" onchange="completarNumero(this.value, 2)" id="valor2" 
+                    required>
+                        <option value=""> Selecione uma opção </option>
+                        <option value=0> 0 </option>
+                        <option value=1> 1 </option>
+                        <option value=2> 2 </option>
+                        <option value=3> 3 </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-outline-primary" id="botaoDePerguntaAnterior"
+                    onclick="carregarPergunta('voltar')"> Pergunta Anterior </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-outline-primary" id="botaoDeProximaPergunta" onclick="carregarPergunta()">
+                    Próxima Pergunta </button>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Ajuda Para Preencher
+                </button>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h2> <em> Instruções Importantes </em> </h2>
+                        <p> Você encontrará 20 proposições diferentes para ler e avaliar. Cada uma delas
+                            apresenta <strong> 2 alternativas possíveis. </strong> </p>
+                        <p> Você deverá responder pontuar uma das alternativas, pois a outra se completara
+                            automaticamente. </p>
+                        <p> <strong> Ambas são corretas e válidas</strong>, portanto, você deverá pontuar aquela que
+                            melhor refletir a sua forma de pensar; 
+                            aquela que se parece mais com o que você costuma fazer ou acredita que faria. </p>
+                        <p> Para alternativa que você escolheu como a mais significativa atribua 2 ou 3 pontos,
+                            dependendo do grau de importância.A alternativa que você julgou menos significativa para você,
+                            atribua 0 ou 1 ponto.</p>
+                        <p>Lembre-se que o valor total das somas das duas sempre dará 3. E também não coloque números
+                            fracionarios.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/array.js"> </script>
+    <script src="js/completarValores.js"> </script>
+
+</body>
+
+</html>

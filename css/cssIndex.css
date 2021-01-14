@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flexbox;
+}
+.container-fluid{
+    height: 50%;
+    width: 30%;
+    text-align: center;
+    border-style: solid;
+    margin-top: 5%;
+    padding: 5%;
+}
+.mt-5, .my-5{
+    margin-top: 1rem!important;
+}
