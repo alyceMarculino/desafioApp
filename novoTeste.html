@@ -29,16 +29,16 @@
     <div class="container-fluid">
         <form action="iniciarTeste.php" method="POST">
             <div class="row">
-                <div class="col-md-6">
-                    <label for="validationCustom01" class="form-label">Nome</label>
-                    <input type="text" class="form-control" minlength="3" placeholder="Nome Completo" id="validation1" required>
+                <div class="col">
+                    <label >Nome</label>
+                    <input type="text" class="form-control" title="Digite um nome de no minimo 3 letras" minlength="3" placeholder="Digite seu nome" id="validation1" required>
                 </div>
                 <div class="col">
-                    <label for="selfie">Envie aqui sua foto</label>
-                    <input type="file" class="form-control-file" name="imagem" id="validation2" onchange="previewImagem()" required>
+                    <label>Envie aqui sua foto</label>
+                    <br>
+                    <input type="file" name="imagem" onchange="previewImagem()" required>
                     <small id="selfie" class="form-text text-muted">Nunca vamos compartilhar sua foto, com ninguém.</small>
                     <img style="width: 20%; margin-top: 1%; position: relative;">
-                   
                 </div>
             </div>
             <button type="submit" class="btn btn-primary" name="novoTeste">Começar Teste</button>
